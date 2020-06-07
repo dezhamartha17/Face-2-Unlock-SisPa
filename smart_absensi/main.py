@@ -4,7 +4,7 @@
 Created on Tue Apr 28 17:05:11 2020
 
 @author: FAHMI-PC
-"""\
+"""
 
 #import library
 
@@ -12,13 +12,14 @@ import os
 import sys
 import cv2
 import csv
-import time
+
 import smtplib
 import mimetypes
 import datetime
 import numpy as np
 import pandas as pd
-
+import time
+from do_something import *
 
 from email import encoders
 from PIL import Image,ImageTk
@@ -261,7 +262,7 @@ class mainScreen:
                         root.configure(highlightcolor="black")
                         root.iconbitmap("mainIcon.ico")
                         root.focus_force()
-                        cs = 'D:/FOLDER KHUSUS NGAMPUS/SEMESTER 6/SISTEM TERSEBAR/UTS/UTS\FIX/Multiprocessing/Smart Absensi/Smart Absensi' + fileName
+                        cs = 'D:/FOLDER KHUSUS NGAMPUS/SEMESTER 6/SISTEM TERSEBAR/UTS/UTS/FIX/Multiprocessing/Smart Absensi/Smart Absensi' + fileName
                         with open(cs, newline="") as file:
                             reader = csv.reader(file)
                             r = 0
@@ -1026,5 +1027,16 @@ class mainScreen:
         self.authorDetails.configure(text='''This software is designed by Rushil Choksi & Modification by FAHMI''')
         self.authorDetails.configure(width=260)
 
+
+# Disini mulai reload module dari do_something
 if __name__ == '__main__':
     vp_start_gui()
+    size = 10000000   
+    n_exec = 10
+    for i in range(0, n_exec):
+        out_list = list()
+        do_something(size, out_list)
+    
+    print ("List processing complete.")
+    end_time = time.time()
+    print("serial time=", end_time - start_time)

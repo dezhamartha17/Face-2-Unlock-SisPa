@@ -12,7 +12,7 @@ import csv
 import numpy as np
 
 
-path_images_from_camera = "data/data_faces_from_camera/"
+path_images_from_camera = "data/create/"
 
 # Dlib detector
 
@@ -60,7 +60,7 @@ def return_features_mean_personX(path_faces_personX):
     if photos_list:
         for i in range(len(photos_list)):
             
-            print("%-40s %-20s" % ("正在读的人脸图像 / image to read:", path_faces_personX + "/" + photos_list[i]))
+            print("%-40s %-20s" % ("image to read:", path_faces_personX + "/" + photos_list[i]))
             features_128d = return_128d_features(path_faces_personX + "/" + photos_list[i])
            
             
@@ -86,7 +86,7 @@ def return_features_mean_personX(path_faces_personX):
 
 # mendapatkan number of latest person
     
-person_list = os.listdir("data/data_faces_from_camera/")
+person_list = os.listdir("data/create/")
 
 person_num_list = []
 

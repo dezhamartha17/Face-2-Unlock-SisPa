@@ -32,7 +32,7 @@ current_face_dir = ""
 
 # ini tempat penyimpanan
 
-path_photos_from_camera = "data/data_faces_from_camera/"
+path_photos_from_camera = "data/create/"
 
 
 # membuat fungsi
@@ -78,9 +78,9 @@ def ambyar_work_del_old_face_folders():
 
 # mulai dari person_1
         
-if os.listdir("data/data_faces_from_camera/"):
+if os.listdir("data/create/"):
     # mendapatkan latest person
-    person_list = os.listdir("data/data_faces_from_camera/")
+    person_list = os.listdir("data/crate/")
     person_num_list = []
     for person in person_list:
         person_num_list.append(int(person.split('_')[-1]))

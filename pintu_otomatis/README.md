@@ -1,3 +1,10 @@
+Install the dependencies and devDependencies and start the server.
+
+```sh
+$ cd dillinger
+$ npm install -d
+$ node app
+```
 
 Pintu otomatis adalah sebuah program Artificial Intelligence
 memakai bahasa python. Tujuan dibuatnya pintu otomatis ini

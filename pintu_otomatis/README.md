@@ -20,3 +20,13 @@ proses training wajah dan testing yang mengandalkan sebuah kamera yang akan
 menyimpan wajah seseorang, apabila wajah tersebut dikenali maka sistem akan
 mendeteksi wajah tersebut dikenali secara otomatis, apabila wajah tidak dikenali
 maka sistem tidak akan mengenali wajah tersebut.  
+
+# Cara Kerja :
+Cara Kerja dari pintu otomatis adalah sebagai berikut:
+- Yang petama akan medeteksi wajah dengan cara mengcapture wajah kita  
+- Kemudian akan dilakukan proses untuk dapat menggerakan sistem agar dapat membuka pintu secara otomatis 
+- Setelah terdeteksi pintu tersebut akan dapat terbuka 
+- Jika wajah tidak berhasil terdeteksi maka pintu tidak akan terbuka 
+
+# Langkah-Langkah Menjalankan
+- 
